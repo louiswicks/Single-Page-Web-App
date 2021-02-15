@@ -1,22 +1,14 @@
+function testNotes() {
+var notes = new Notes();
 
-
-
-
-
-// console.log("Look, we're in note spec!")
-
-// function testNotes(){
-// var notes = new Notes();
-
-// if( notes.view === []) {
-//   console.log("That is an empty array! Good job!") 
-//  } else {
-//       console.log("Fail")
-//     }
-//   }
-
-
-// testNotes();
+if(notes.view.length !== 0) {
+throw new Error("That is not an array")
+} else {
+    console.log("Test passing!")
+}
+};
+  
+testNotes();
 
 // notes.toEqual([], this.view) 
 // {
