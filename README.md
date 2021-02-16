@@ -1,6 +1,11 @@
 # Single-Page-Web-App-
 
-User Stories
+
+## MVP
+Single page app with list of notes and ability to create a new note that is added to the list.
+
+
+## User Stories
 
 1. As a programmer
    I can see a list of my notes, where each note is abbreviated to the first 20 characters
