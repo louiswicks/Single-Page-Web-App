@@ -14,11 +14,11 @@ var notes = new Notes();
 
 function loadContent(){
   var contentDiv = document.getElementById("app"),
-    index = location.hash.substr(1);
+   index = location.hash.substr(1);
 
-    content = notes.messages[index]
-    var emoji = getEmojis(content, "app");
-    contentDiv.innerHTML = emoji
+   content = notes.messages[index]
+  
+    contentDiv.innerHTML = content;
     
 }
 
@@ -54,9 +54,6 @@ function updateList() {
 let createButton = document.getElementById("create-note")
 createButton.addEventListener("click", createNewNote)
 
-if (!location.hash) {
-  location.hash = "#0";
-}
 
 
 
@@ -80,5 +77,8 @@ function getEmojis(body, id) {
     )
   }
   
+if (!location.hash) {
+  location.hash = "#1"; 
+} 
   updateList()
   window.addEventListener("hashchange", loadContent)
